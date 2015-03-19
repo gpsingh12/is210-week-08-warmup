@@ -1,6 +1,7 @@
-#!/usr/bin/env python 
+#!/usr/bin/env python
 # -*- coding: utf-8 -*
 """ Fibonacci Sequence."""
+
 
 def fibonacci(maxint):
     """Function generates a fibonacci sequence.
@@ -13,18 +14,10 @@ def fibonacci(maxint):
         Examples:
                 >>> fibonacci(10)
                     [0, 1, 1, 2, 3, 5, 8]
-        
     """
-    a, b = 0, 1
-    LIST = [a]
-    #print a
-    while b < maxint:
-        
-        a, b = b, a + b
-        
-        LIST.append(a)
-        #LIST.append(b)
-
-    return LIST
-    
-
+    lastnum, curnum = 0, 1
+    list1 = [lastnum]
+    while curnum < maxint:
+        lastnum, curnum = curnum, lastnum + curnum
+        list1.append(lastnum)
+    return list1
