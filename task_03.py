@@ -25,8 +25,8 @@ def lexicographics(to_analyze):
     list1 = []
     for item in text:
         myvar = len(item.split())
-        myvar1 = list1.append(myvar)
-        maxcount = max(myvar1)
-        mincount = min(myvar1)
+        list1.append(myvar)
+        maxcount = max(list1)
+        mincount = min(list1)
         average = decimal.Decimal(sum(list1)/decimal.Decimal(len(text)))
     return maxcount, mincount, average
