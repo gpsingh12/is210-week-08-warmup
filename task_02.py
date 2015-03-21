@@ -5,8 +5,6 @@
 """
 
 
-
-
 def bool_to_str(bval):
     """Function takes one argument.
        Uses if else statement to return
@@ -24,10 +22,9 @@ def bool_to_str(bval):
                     'No'
     """
 
-    bval == True
     if bval:
-       var = 'Yes'
+        var = 'Yes'
     else:
-       var = 'No'
+        var = 'No'
 
     return var
